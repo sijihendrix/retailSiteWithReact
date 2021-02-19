@@ -3,7 +3,7 @@ import "./Checkout.scss";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { selectCartItems, selectCartTotal } from "redux/cart/cart.selectors";
-import { CheckoutItem } from "../../components/CheckoutItem/Item";
+import CheckoutItem from "../../components/CheckoutItem/Item";
 
 export const CheckoutPage = ({ cartItems, total }) => (
   <div className="checkout-page">
